@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&family=Outfit:wght@100..900&display=swap');
+
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+body{
+    background-color: #E8F9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: 70px; */
+}
+
+h1{
+    width: 70%;
+    font-size: medium;
+    font-family: "Outfit", serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+p{
+    width: 90%;
+    font-size: 15px;
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    color: grey;
+    text-align: center;
+
+}
+
+.qr_box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.qrcode_logo{
+    width:85%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;  /* تغییر ظاهر موس هنگام hover روی بارکد */
+    transition: transform 0.3s ease; /* افزودن انیمیشن */
+}
+
+/* .qrcode_logo:hover {
+    transform: scale(1.1); /* بزرگ‌تر کردن بارکد هنگام hover 
+} */
+
+.signature{
+    font-size: large ;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign{
+    font-family: "Caveat", cursive !important;
+}
+
+.hover_barcode{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.speaker_icon{
+    position: relative;
+    top: 23px;
+    left: 10px;
+}
+
+
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);   
+    font-family: "Bubbler One", serif;
+    font-weight: bold;
+    font-style: normal; 
+}
+
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(0, 0, 0, 0.75); }
+  to { border-right-color: transparent; }
+}
